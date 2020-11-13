@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Posts from './Posts/Posts';
 import NewPost from './NewPost/NewPost';
 import './Blog.css';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 
 class Blog extends Component {
     render () {
@@ -11,8 +11,8 @@ class Blog extends Component {
                 <header className='Blog'>
                     <nav>
                         <ul>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to="/new-post">New Post</Link></li>
+                            <li><NavLink to='/' exact>Home</NavLink></li>
+                            <li><NavLink to="/new-post" exact>New Post</NavLink></li>
                         </ul>
                     </nav>
                 </header>
