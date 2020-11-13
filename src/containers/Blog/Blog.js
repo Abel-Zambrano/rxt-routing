@@ -12,7 +12,7 @@ class Blog extends Component {
                 <header className='Blog'>
                     <nav>
                         <ul>
-                            <li><NavLink to='/' exact>Home</NavLink></li>
+                            <li><NavLink to='/' exact>Post</NavLink></li>
                             <li><NavLink to="/new-post" exact>New Post</NavLink></li>
                         </ul>
                     </nav>
